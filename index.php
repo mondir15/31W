@@ -5,7 +5,11 @@
     <h3>index.php</h3>
 <?php if ( have_posts()):
    while (have_posts() ): the_post();
-        the_title('<h1>,</h1>');
+        the_title('<h1>','</h1>');
+        the_content();
+        the_excerpt();
+       echo wp_trim_words(  get_the_excerpt(), 4 );
+       
    endwhile;
 endif;
 ?>
