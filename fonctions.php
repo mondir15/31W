@@ -7,3 +7,25 @@ function ajouter_styles() {
                 filemtime(get_template_directory() . '/style.css')); // la de la dernière feuille de style
 }
 add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
+/*--------------------------------------------------------add_theme_support*/
+add_theme_support('html5',
+                array('search-form',
+                 'comment-form',
+                 'comment-list',
+                 'gallery',
+                 'caption'));
+
+
+add_theme_support( 'title-tag' );
+add_theme_support( 'custom-logo', array(
+                    'height' => 150,
+                    'width'  => 150,
+                ) );
+
+
+
+   
+    register_nav_menus( array(
+        'pluginbuddy_mobile' => 'PluginBuddy Mobile Navigation Menu',
+        'footer_menu' => 'My Custom Footer Menu',
+    ) );

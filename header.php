@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Document</title>
-    <h1>03 eme</h1><h2>deuxieme</h2><h3>premiere</h3>
 
     <?php wp_head() ?>
 </head>
@@ -16,6 +15,8 @@
         <h1><?php bloginfo('name');?></h1>
         <h2><?php bloginfo('description');?></h2>
         <h2><?php bloginfo('url');?></h2>
+
+        <h1><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a></h1>
         
 
     </header>
