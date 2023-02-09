@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Document</title>
-    <h1>3 eme</h1><h2>deuxieme</h2><h3>premiere</h3>
+    <h1>03 eme</h1><h2>deuxieme</h2><h3>premiere</h3>
 
     <?php wp_head() ?>
 </head>
