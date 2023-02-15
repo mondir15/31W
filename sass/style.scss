@@ -1,7 +1,7 @@
 /*
-Theme Name: 31w mondhir
+Theme Name: 31w mondir
 Theme URI: https://github.com/mondir35
-Author: mondir
+Author: benzeghioua el moundhir
 Author URI: 
 Description: Introductin à la création d'un thème Wordpress
 Version: 1.0
@@ -10,15 +10,22 @@ Tested up to: 5.4
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 31w-mondir
+Text Domain: 31w-mondir-benzeghioua
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+/* -------------------------- NORMALIZE */
+@import "normalize/normalize";
+@import "normalize/boxsizing";
 
-/* ------------------------------------NORMALIZE*/
-@import "normalize/heading";
+/* -------------------------- COMPOSANT */
+@import "composant/entete";
 
-/* ------------------------------------BASE*/
+
+/* -------------------------- BASE */
 @import "base/heading";
+
+
+
 
