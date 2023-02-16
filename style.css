@@ -32,6 +32,7 @@ html {
   justify-content: flex-end;
   flex-wrap: wrap;
   list-style-type: none;
+
 }
 .menu-entete-container .menu .menu-item {
   flex: 1 0 70px;
