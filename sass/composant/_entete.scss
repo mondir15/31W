@@ -1,4 +1,14 @@
+.site__entete{
+  
+}
+.logomenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .menu-entete-container {
+flex :1
 
 
 .menu { //ul
@@ -6,7 +16,7 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     list-style-type: none;
-    
+
 
 .menu-item { // li
 

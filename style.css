@@ -27,12 +27,20 @@ html {
 }
 
 /* -------------------------- COMPOSANT */
+.logomenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-entete-container {
+  flex: 1;
+}
 .menu-entete-container .menu {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   list-style-type: none;
-
 }
 .menu-entete-container .menu .menu-item {
   flex: 1 0 70px;
@@ -40,6 +48,7 @@ html {
 .menu-entete-container .menu .menu-item a {
   padding: 3px 5px;
   color: #555;
+  font-size: 20px;
 }
 .menu-entete-container .menu .menu-item a:hover {
   color: #0f0;
