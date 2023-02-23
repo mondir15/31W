@@ -13,8 +13,7 @@ if (have_posts()):
         <h1><a href="<?php the_permalink(); ?>"><?= get_the_title();  ?> </a></h1>
 
         <?php 
-        // the_content();
-        // the_excerpt();
+        
         echo wp_trim_words(get_the_excerpt(), 4);
     endwhile;
 endif;
