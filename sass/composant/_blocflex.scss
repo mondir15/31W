@@ -1,0 +1,14 @@
+.blocflex{
+    display : flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    article {
+        border: 1px solid rgb(208, 207, 207);
+        background-color: rgb(52, 223, 206);
+        border-radius: 10px;
+        flex: 1 0 300px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+}
