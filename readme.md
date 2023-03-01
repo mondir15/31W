@@ -1,17 +1,30 @@
-# Exercice #2
 
-## Améliorer la stucture générale du thème
+
 
 ### Auteur: El Moundhir Benzeghioua
 
-#### Objectifs
+# TP1 (25 points)
 
-- Formater en scss l'affichage de fichier markdown
-- Créer des modèles pour afficher des archives d'article
-- Améliorer de module front-page.php
-- Création de menu
-- Créer un site adaptatif en utilisant l'approche mobile-first
-- Créer un minimum de 10 commits
-- Déployer le site local vers un serveur distant
+###### L\'objectif du TP1 :
 
--https://aecweb3.sg-host.com/
+- Créer une extension
+- Continuer de faire progresser votre thème
+- Déployer votre projet sur le serveur **_Siteground_**
+
+###### Ce projet vous permettra d\'améliorer globalement votre site en y intégrant les éléments suivants:
+
+- Une extension carrousel permettant de visionner une galerie d\'images
+- Un pied de page
+- Un design de thème amélioré avec Sass et PHP
+- Amélioration des modèles:
+  - front-page.php
+  - single.php
+  - category.php
+  - search.php
+  - header.php
+  - footer.php
+- Une mise en page entièrement adaptative
+- Au niveau du design du site inspirez-vous des sites:
+  - https://www.scrum.org/
+  - https://cfe.dev/
+
