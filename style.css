@@ -502,7 +502,8 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.blocflex article {
+
+.blocflex__article {
   border: 1px solid rgb(208, 207, 207);
   background-color: #EEE;
   border-radius: 10px;
@@ -510,6 +511,10 @@ nav {
   margin: 10px;
   padding: 10px;
   text-align: center;
+}
+
+.blocflex__galerie {
+  flex: 1 0 100%;
 }
 
 .recherche article {
