@@ -3,12 +3,11 @@
 <h3>menu secondaire</h3>
 
 <?php
-$category = get_queried_object();
+$lemenu = "note-wp";
+if(in_category('cours'))
 if (isset($category))
 {
- $lemenu = $category->slug;
-}else{
- $lemenu = "note-wp";
+ $lemenu = "cours";
 }
  wp_nav_menu(array(
  "menu" => $lemenu,

@@ -33,7 +33,12 @@ add_theme_support( 'custom-logo',
     }
     add_action( 'after_setup_theme', 'enregistrement_des_menus', 0 );
 
-
+/**
+ * permet de modifier les titres de menu <cours>
+ * @param title :titre de chdoix menu
+ * @param $item :le choix global
+ * @param $args :objet qui represente la structure de menu
+ */
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté
  * le hook « pre_get_posts » se manifeste juste avant d'exécuter la requête principal
@@ -52,3 +57,12 @@ function cidweb_modifie_requete_principal( $query ) {
      }
      add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
                    
+     function perso_menu_item_title($title, $item, $args) {
+        // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
+        if($args->menu == 'cours') {
+    // Modifier la longueur du titre en fonction de vos besoins
+    $title = wp_trim_words($title, 3, ' ... ');
+    }
+    return $title;
+    }
+    add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
