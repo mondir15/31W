@@ -543,6 +543,8 @@ nav {
 .site__aside {
   grid-area: aside;
   background-color: rgb(47, 148, 210);
+  font-size: 20px;
+  color: yellowgreen;
 }
 
 /* body ou un conteneur globale*/
