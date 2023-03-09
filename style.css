@@ -505,7 +505,7 @@ nav {
 
 .blocflex__article {
   border: 1px solid rgb(208, 207, 207);
-  background-color: #EEE;
+  background-color: #dfcbcb;
   border-radius: 10px;
   flex: 1 0 300px;
   margin: 10px;
@@ -523,7 +523,9 @@ nav {
 }
 
 /*.......................LAYOUT*/
-/**Mise en page avec display Grid*/
+/**
+Mise en page avec display: grid
+*/
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
@@ -543,11 +545,9 @@ nav {
 .site__aside {
   grid-area: aside;
   background-color: rgb(47, 148, 210);
-  font-size: 20px;
-  color: yellowgreen;
 }
 
-/* body ou un conteneur globale*/
+/* body ou un conteneur globale */
 .site {
   display: grid;
   grid-template-columns: auto;
@@ -562,12 +562,12 @@ nav {
 }
 
 .no-aside {
-  grid-template-areas: "header" "aside" "main" "footer";
+  grid-template-areas: "header" "main" "footer";
   row-gap: 50px;
 }
 @media screen and (min-width: 1000px) {
   .no-aside {
-    grid-template-columns: 30% auto;
-    grid-template-areas: "header header" " main" "footer footer";
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main" "footer";
   }
 }/*# sourceMappingURL=style.css.map */
