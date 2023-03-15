@@ -522,6 +522,28 @@ nav {
   margin: 10px;
 }
 
+.menu-cours-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-cours-container .menu .menu-item {
+  list-style-type: none;
+}
+.menu-cours-container .menu .menu-item a .cours__titre {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a .cours__titre {
+    display: block;
+  }
+}
+
 /*.......................LAYOUT*/
 /**
 Mise en page avec display: grid

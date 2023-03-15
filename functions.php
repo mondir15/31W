@@ -59,10 +59,13 @@ function cidweb_modifie_requete_principal( $query ) {
                    
      function perso_menu_item_title($title, $item, $args) {
         // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
+       
         if($args->menu == 'cours') {
+            $sigle = substr($title,4 , 3);
+            $title = substr($title, 7);
     // Modifier la longueur du titre en fonction de vos besoins
-    $title = wp_trim_words($title, 3, ' ... ');
+    $title = "<div class = 'cours__sigle'>" .$sigle . "</div>" .  "<p class = 'cours__titre'>" .wp_trim_words($title, 2, ' ... ')."</p>";
     }
-    return $title;
+    return $title ;
     }
     add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
