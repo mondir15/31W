@@ -2,17 +2,14 @@
     display : flex;
     justify-content: space-between;
     flex-wrap: wrap;
-   
 }
+
 .blocflex__article {
-    border: 1px solid rgb(208, 207, 207);
-    background-color: #dfcbcb;
-    border-radius: 10px;
+    margin : 10px;
+    padding : 5px;
+    border : 1px solid #aaa;
     flex: 1 0 300px;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
 }
-.blocflex__galerie{
+.blocflex__galerie {
     flex: 1 0 100%;
 }

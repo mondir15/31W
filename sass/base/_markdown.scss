@@ -1,44 +1,14 @@
-/* Liste non-ordonnée */
-ul {
-    list-style-type: none; /* supprime les puces */
-    margin: 0; /* supprime les marges par défaut */
-    padding: 0; /* supprime les marges intérieures par défaut */
-  }
-  
-  ul li {
-    margin-bottom: 10px; /* ajoute un espacement entre les éléments de la liste */
-  }
-  
-  /* Liste ordonnée */
-  ol {
-    list-style-type: decimal; /* utilise des chiffres pour les puces */
-    margin: 0; /* supprime les marges par défaut */
-    padding: 0; /* supprime les marges intérieures par défaut */
-  }
-  
-  ol li {
-    margin-bottom: 10px; /* ajoute un espacement entre les éléments de la liste */
-  }
-  
-  /* Texte en gras */
-  strong, b {
-    font-weight: bold; /* définit l'épaisseur de police en gras */
-  }
-  
-  /* Texte en italique */
-  em, i {
-    font-style: italic; /* définit le style de police en italique */
-  }
-  
-  /* Lien hypertexte */
-  a {
-    color: blue; /* définit la couleur du texte */
-    text-decoration: none; /* supprime le soulignement par défaut */
-  }
-  
-  a:hover {
-    text-decoration: underline; /* ajoute un soulignement au survol de la souris */
-  }
-  
+ul,ol{}
+ul li {}
+ol li {}
 
+strong,  b {//: le texte en gras
+
+}
+em , i { //le texte en italique
+}
+a{} 
+
+code {}
+hr {}
 

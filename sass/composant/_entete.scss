@@ -1,110 +1,86 @@
 
-.site__entete h1 {
-    text-align: center;
- 
-}
-.site__entete h2{
-    text-align: center;
-}
-nav{
-    justify-content: space-between;
-}
+.site__entete {
 
+}
 .logomenu{
-    background-color:#0F172B;
-    display: flex;
-    color: #F1F8FF;
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
-    padding: 0px 20px;
-    
 
 }
-.logomenu a{
-    border-radius: 50%;
-    margin: 20px;
-}
-.logomenu a {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  
-  .logomenu img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
 
 .menusearch {
     display : flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap : wrap;
-}
-
-
-#chkburger:checked ~ .menue-entete-container{
-    transform :translateX(300px);
-    transition :transform .025s;
-}
-.burger{
-    display: block;
-    @media screen and (min-width:400){
-        transform: translateX(500px);
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+    @media screen and (min-width:1000px) {
+        flex-direction: row;
+        align-items:center;
+        justify-content: flex-end;
+        flex: 1;
     }
 }
-.menu-entete-container {
-    
-    font-size: 20px;
-    text-transform: uppercase;
 
+#chkBurger {
+    display : none;
+}
+#chkBurger:checked ~ .menu-entete-container {
+    transform : translateX(0);
+}
+.burger {
+    display : block;
+    @media screen and (min-width: 500px) {
+    display: none;    
+}
+}
+
+.menu-entete-container { // nav
+    transform : translateX(300px);
+    transition : transform .25s;
+    @media screen and (min-width: 500px) {
+        transform : translateX(0);  
+}
 
 .menu { //ul 
     display : flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
     list-style-type: none;
+@media screen and (min-width: 500px) {
+    flex-direction : row;  
+    justify-content: flex-end;
+    align-items: center;
+}
+    
+    
+ 
+ 
    // margin-left : auto;
 
 .menu-item { // li
         flex : 1 0 50px;
 
     a{
-        padding : 10px 20px;
-        color :#F1F8FF;
+        white-space: nowrap;
+        padding : 3px 5px;
+        color : #555;
     }
     a:hover {
-        
-       
-        text-decoration: none;
+        color : #0f0;
     }
 
 }
 
 }
 
-
 }
 
-@media (max-width: 600px) {
-    .logomenu {
-    flex-direction: column;
-    
-    }
-    .logomenu img {
-        display:none;
-    }
-    .menu{
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-   
-  }
+.recherche {
+    display : flex;
+    flex-wrap: nowrap;
+}
 
- 
+
