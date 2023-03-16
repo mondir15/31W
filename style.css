@@ -436,8 +436,9 @@ nav {
 }
 
 .logomenu {
-  background-color: #FDB813;
+  background-color: #0F172B;
   display: flex;
+  color: #F1F8FF;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
@@ -469,15 +470,29 @@ nav {
   flex-wrap: wrap;
 }
 
+#chkburger:checked ~ .menue-entete-container {
+  transform: translateX(300px);
+  transition: transform 0.025s;
+}
+
+.burger {
+  display: block;
+}
+@media screen and (min-width: 400) {
+  .burger {
+    transform: translateX(500px);
+  }
+}
+
 .menu-entete-container {
   font-size: 20px;
-  color: #222;
   text-transform: uppercase;
 }
 .menu-entete-container .menu {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+  align-items: center;
   list-style-type: none;
 }
 .menu-entete-container .menu .menu-item {
@@ -485,16 +500,23 @@ nav {
 }
 .menu-entete-container .menu .menu-item a {
   padding: 10px 20px;
-  color: #555;
+  color: #F1F8FF;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  background-color: aquamarine;
   text-decoration: none;
 }
 
 @media (max-width: 600px) {
   .logomenu {
     flex-direction: column;
+  }
+  .logomenu img {
+    display: none;
+  }
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 .blocflex {
@@ -550,8 +572,8 @@ Mise en page avec display: grid
 */
 .site__entete {
   grid-area: header;
-  padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: antiquewhite;
+  color: white;
+  background-color: #0F172B;
 }
 
 .site__main {
@@ -571,6 +593,8 @@ Mise en page avec display: grid
 
 /* body ou un conteneur globale */
 .site {
+  width: 100vh;
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";

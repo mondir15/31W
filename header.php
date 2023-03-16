@@ -7,27 +7,29 @@
     <title>Document</title>
     <?php wp_head(); ?>
 </head>
-<body class="site <?=(is_front_page()?"no-aside": ""); ?> ">
+<body class="site <?= (is_front_page() ? "no-aside" : "");  ?> ">
     <header class="site__entete">  
         <section class="logomenu">
             <?php the_custom_logo(); ?> 
-            <?php wp_nav_menu(array(
+            <div class="menusearch">
+                <input type="checkbox" id="chkBurger">
+                <?php wp_nav_menu(array(
                     'menu' => 'entete',
                     'container' => 'nav'
                 )); ?> 
-            <div class="menusearch">
-               
-                <?= get_search_form(); ?>   
+                <?= get_search_form(); ?>
+                <label for="chkBurger">
+                <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">
+                </label>   
             </div> 
         </section>
         <h1><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1> 
         <h2><?php  bloginfo('description'); ?></h2>
     </header>
-
-   <?php
-   if (is_front_page() == false){
-    get_template_part("template-parts/aside");
-   }
-    ?>
-
+    <?php 
+    if (is_front_page() == false)
+    {
+       get_template_part("template-parts/aside");
+    }
+     ?>
     

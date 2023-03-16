@@ -11,8 +11,9 @@ nav{
 }
 
 .logomenu{
-    background-color:#FDB813;
+    background-color:#0F172B;
     display: flex;
+    color: #F1F8FF;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
@@ -46,11 +47,19 @@ nav{
 }
 
 
-
+#chkburger:checked ~ .menue-entete-container{
+    transform :translateX(300px);
+    transition :transform .025s;
+}
+.burger{
+    display: block;
+    @media screen and (min-width:400){
+        transform: translateX(500px);
+    }
+}
 .menu-entete-container {
     
     font-size: 20px;
-    color: #222;
     text-transform: uppercase;
 
 
@@ -58,6 +67,7 @@ nav{
     display : flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    align-items: center;
     list-style-type: none;
    // margin-left : auto;
 
@@ -66,11 +76,11 @@ nav{
 
     a{
         padding : 10px 20px;
-        color : #555;
+        color :#F1F8FF;
     }
     a:hover {
         
-        background-color: aquamarine;
+       
         text-decoration: none;
     }
 
@@ -84,7 +94,17 @@ nav{
 @media (max-width: 600px) {
     .logomenu {
     flex-direction: column;
+    
+    }
+    .logomenu img {
+        display:none;
+    }
+    .menu{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
    
   }
+
  
