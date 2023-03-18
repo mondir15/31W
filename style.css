@@ -451,11 +451,12 @@ p {
 }
 .menu-entete-container .menu .menu-item a {
   white-space: nowrap;
-  padding: 3px 5px;
-  color: #555;
+  padding: 20px 20px;
+  color: black;
+  font-size: 22px;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  color: #0f0;
+  color: red;
 }
 
 .recherche {
@@ -517,7 +518,9 @@ Mise en page avec display: grid
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: antiquewhite;
+  background-color: #90EE90;
+  text-align: center;
+  color: white;
 }
 
 .site__main {
@@ -527,7 +530,8 @@ Mise en page avec display: grid
 
 .site__footer {
   grid-area: footer;
-  background-color: antiquewhite;
+  background-color: #90EE90;
+  text-align: center;
 }
 
 .site__aside {
