@@ -518,7 +518,7 @@ Mise en page avec display: grid
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
   color: white;
 }
@@ -530,7 +530,7 @@ Mise en page avec display: grid
 
 .site__footer {
   grid-area: footer;
-  background-color: transparent;
+  background-color: #90EE90;
   text-align: center;
 }
 

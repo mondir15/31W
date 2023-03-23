@@ -23,8 +23,8 @@
                 </label>   
             </div> 
         </section>
-        <h1><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1> 
-        <h2><?php  bloginfo('description'); ?></h2>
+        <h1 class="site__titre"><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1> 
+        <h2 class="site__soutitre"><?php  bloginfo('description'); ?></h2>
     </header>
     <?php 
     if (is_front_page() == false)

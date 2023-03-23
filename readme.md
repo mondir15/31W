@@ -3,28 +3,16 @@
 
 ### Auteur: El Moundhir Benzeghioua
 
-# TP1 (25 points)
+# Exercice #3 - Widget et ACF
 
-###### L\'objectif du TP1 :
+###### L\'objectif du Exercice 03:
 
-- Créer une extension
-- Continuer de faire progresser votre thème
-- Déployer votre projet sur le serveur **_Siteground_**
+Poursuivre le développement de thème sur le serveur distant.
+Produire 10 commits
+Créer de nouveaux templates 
+Intégrer des champs personnalisée
+Utiliser la structure de widget
 
-###### Ce projet vous permettra d\'améliorer globalement votre site en y intégrant les éléments suivants:
 
-- Une extension carrousel permettant de visionner une galerie d\'images
-- Un pied de page
-- Un design de thème amélioré avec Sass et PHP
-- Amélioration des modèles:
-  - front-page.php
-  - single.php
-  - category.php
-  - search.php
-  - header.php
-  - footer.php
-- Une mise en page entièrement adaptative
-- Au niveau du design du site inspirez-vous des sites:
-  - https://www.scrum.org/
-  - https://cfe.dev/
+######:
 
