@@ -12,7 +12,7 @@
         <section class="logomenu">
             <?php the_custom_logo(); ?> 
             <div class="menusearch">
-                <input type="checkbox" id="chkBurger" >
+                <input type="checkbox" id="chkBurger">
                 <?php wp_nav_menu(array(
                     'menu' => 'entete',
                     'container' => 'nav'
@@ -32,4 +32,3 @@
        get_template_part("template-parts/aside");
     }
      ?>
-    
