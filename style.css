@@ -23,7 +23,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-html {
+ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -384,6 +384,10 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+.invisible {
+  display: none;
+}
+
 /* -------------------------- COMPOSANT */
 .logomenu {
   display: flex;
@@ -451,12 +455,11 @@ p {
 }
 .menu-entete-container .menu .menu-item a {
   white-space: nowrap;
-  padding: 20px 20px;
-  color: black;
-  font-size: 22px;
+  padding: 3px 5px;
+  color: #555;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  color: red;
+  color: #0f0;
 }
 
 .recherche {
@@ -479,6 +482,8 @@ p {
 
 .blocflex__galerie {
   flex: 1 0 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .main__recherche article {
@@ -486,29 +491,67 @@ p {
   margin: 10px;
 }
 
+.menu-note-wp-container,
+.menu-cours-container {
+  margin: 0;
+  display: flex;
+}
+.menu-note-wp-container .menu,
 .menu-cours-container .menu {
   display: flex;
+  flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 1000px) {
+  .menu-note-wp-container .menu,
   .menu-cours-container .menu {
     flex-direction: column;
   }
 }
+.menu-note-wp-container .menu .menu-item,
 .menu-cours-container .menu .menu-item {
   list-style-type: none;
+  display: flex;
+  margin: 0;
 }
+.menu-note-wp-container .menu .menu-item a,
+.menu-cours-container .menu .menu-item a {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  text-decoration: none;
+  font-variant: small-caps;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #000;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 3px 5px;
+}
+.menu-note-wp-container .menu .menu-item a .cours__sigle,
 .menu-cours-container .menu .menu-item a .cours__sigle {
-  padding: 3px;
+  padding: 1px 3px;
 }
+@media screen and (min-width: 1000px) {
+  .menu-note-wp-container .menu .menu-item a .cours__sigle,
+  .menu-cours-container .menu .menu-item a .cours__sigle {
+    padding: 5px;
+  }
+}
+.menu-note-wp-container .menu .menu-item a .cours__titre,
 .menu-cours-container .menu .menu-item a .cours__titre {
   display: none;
 }
 @media screen and (min-width: 1000px) {
+  .menu-note-wp-container .menu .menu-item a .cours__titre,
   .menu-cours-container .menu .menu-item a .cours__titre {
     display: block;
+    margin: 0;
   }
+}
+.menu-note-wp-container .menu .menu-item a:hover,
+.menu-cours-container .menu .menu-item a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* -------------------------- LAYOUT */
@@ -519,19 +562,17 @@ Mise en page avec display: grid
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
   background-color: rgba(255, 255, 255, 0.7);
-  text-align: center;
-  color: white;
 }
 
 .site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  background-color: aquamarine;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #90EE90;
-  text-align: center;
+  background-color: antiquewhite;
 }
 
 .site__aside {
@@ -546,22 +587,20 @@ Mise en page avec display: grid
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
-  row-gap: 50px;
 }
 @media screen and (min-width: 1000px) {
   .site {
-    grid-template-columns: 30% auto;
+    grid-template-columns: 25% auto;
     grid-template-areas: "header header" "aside main" "footer footer";
   }
 }
 
 .no-aside {
   grid-template-areas: "header" "main" "footer";
-  row-gap: 50px;
 }
 @media screen and (min-width: 1000px) {
   .no-aside {
     grid-template-columns: auto;
     grid-template-areas: "header" "main" "footer";
   }
-}/*# sourceMappingURL=style.css.map */
+}
