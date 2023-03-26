@@ -17,7 +17,7 @@ Mise en page avec display: grid
   
   .site__footer {
     grid-area: footer;
-    background-color: #90EE90;
+    background-color: #eed890;
     text-align: center;
 
   
@@ -25,7 +25,7 @@ Mise en page avec display: grid
 
   .site__aside {
     grid-area: aside;
-    background-color: rgb(47, 148, 210);
+    background-color: rgb(210, 158, 47);
   }
 /* body ou un conteneur globale */
   .site {

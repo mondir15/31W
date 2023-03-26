@@ -455,8 +455,10 @@ p {
 }
 .menu-entete-container .menu .menu-item a {
   white-space: nowrap;
-  padding: 3px 5px;
-  color: #555;
+  padding: 3px 20px;
+  color: #0c0c0c;
+  text-decoration: none;
+  font-size: 22px;
 }
 .menu-entete-container .menu .menu-item a:hover {
   color: #0f0;
@@ -478,6 +480,7 @@ p {
   padding: 5px;
   border: 1px solid #aaa;
   flex: 1 0 300px;
+  background-color: aliceblue;
 }
 
 .blocflex__galerie {
@@ -567,17 +570,17 @@ Mise en page avec display: grid
 .site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  background-color: aquamarine;
+ 
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: antiquewhite;
+  background-color: rgb(221, 201, 175);
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(47, 148, 210);
+  background-color: #F5F5DC;
 }
 
 /* body ou un conteneur globale */
