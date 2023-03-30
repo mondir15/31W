@@ -607,3 +607,10 @@ Mise en page avec display: grid
     grid-template-areas: "header" "main" "footer";
   }
 }
+.viewport{
+  min-height: 100vh;
+  padding:0 1.2rem;
+  
+
+}
+
