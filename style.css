@@ -556,6 +556,45 @@ p {
 .menu-cours-container .menu .menu-item a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+.site__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__widget {
+  display: flex;
+  flex-direction: row;
+}
+.footer__widget div {
+  flex: 1 0 33%;
+}
+
+.footer__lien {
+  display: flex;
+  flex-direction: row;
+}
+.footer__lien div {
+  flex: 1 0 33%;
+}
+
+.menu__bloc .menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.menu__bloc .menu .menu-item {
+  border: 1px solid #aaa;
+  flex: 1 0 33%;
+}
+.menu__bloc .menu .menu-item a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.viewport {
+  min-height: 100vh;
+  padding: 0 3rem;
+}
 
 /* -------------------------- LAYOUT */
 /**
@@ -607,10 +646,3 @@ Mise en page avec display: grid
     grid-template-areas: "header" "main" "footer";
   }
 }
-.viewport{
-  min-height: 100vh;
-  padding:0 1.2rem;
-  
-
-}
-
