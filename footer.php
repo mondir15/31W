@@ -18,7 +18,6 @@
         <div></div>
     </section>
 <!--<h3>Pied de page</h3>-->
-<h3>31W - Un thème WordPress</h3>
 <a href="https://github.com/mondir15">Lien github</a>
 <h3></h3>
 </footer>

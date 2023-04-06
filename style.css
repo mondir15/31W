@@ -49,8 +49,9 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
+  font-size: 3em;
   margin: 0.67em 0;
+  text-align: center;
 }
 
 /* Grouping content
@@ -345,6 +346,7 @@ h1 {
 
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+  text-align: center;
 }
 
 h3 {
@@ -567,6 +569,9 @@ p {
 .footer__widget {
   display: flex;
   flex-direction: row;
+  gap: 15px;
+  margin: 15px;
+  padding: 20px;
 }
 .footer__widget div {
   flex: 1 0 33%;
@@ -575,6 +580,7 @@ p {
 .footer__lien {
   display: flex;
   flex-direction: row;
+  padding: 20px;
 }
 .footer__lien div {
   flex: 1 0 33%;
@@ -602,22 +608,45 @@ p {
   background-image: url('https://s2.svgbox.net/materialui.svg?ic=notification_important');
   background-repeat: no-repeat;
   background-color: #f5f5f5;
-  border: 1px solid #aaa;
-  width: 100px;
-  height: 100px;
+  border: 2px solid #ccc;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
   transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
+
+.evenement__porte:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+}
+
 .evenement__porte a {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   text-decoration: none;
   color: #333;
-  font-size: 2rem;
-  text-align: center;
-  line-height: 31px;
+  font-size: 1.8rem;
 }
+
+.evenement__porte h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.evenement__porte p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+
+
 
 /* -------------------------- LAYOUT */
 /**
