@@ -48,8 +48,6 @@
   </div>
 </section>
 
-<!--<h3>Pied de page</h3>-->
-
 <h3></h3>
 </footer>
 <?php wp_footer(); ?>
