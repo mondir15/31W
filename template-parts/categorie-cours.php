@@ -4,7 +4,7 @@
  * un article provenant d'un conteneur  de class blocflex
  */
 $titre = get_the_title();
-$sigle = substr($titre, 0, 7);
+$sigle = substr($titre, 0, 3);
 $titre_long = substr($titre, 7, -5);
 $duree = "90h";
 ?>
