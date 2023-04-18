@@ -407,6 +407,13 @@ p {
   justify-content: flex-start;
   align-items: flex-end;
 }
+.recherche__erreur {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+ padding: 20px;
+  text-align: center;
+}
 @media screen and (min-width: 1000px) {
   .menusearch {
     flex-direction: row;
@@ -711,6 +718,22 @@ Mise en page avec display: grid
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
  
+}
+.site__main h1 {
+  color: red;
+  font-size: 45px;
+  
+ 
+}
+.site__main p {
+  color: red;
+  font-size: 18px;
+  text-align: center;
+  
+ 
+}
+.site__main h3 {
+  color: red;
 }
 
 .site__footer {

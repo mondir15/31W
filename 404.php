@@ -7,10 +7,10 @@ get_header() ?>
     
     <h1>Erreur 404</h1>
     <p>Page introuvable,vous pouvez tenter une recherche</p>
+    <div class="recherche__erreur">
     <?= get_search_form(); ?>
-                <label for="chkBurger" class="burger">
-                <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">
-                </label>  
+    </div>
+               
                 <h3>Nos choix de cours</h3> 
                 <?php
                    
@@ -31,11 +31,13 @@ $sigle = substr($titre, 0, 7);
 $titre_long = substr($titre, 7, -5);
 $duree = "90h";
 ?>
+<php 
+$titre = get_the_title();
+
+?>
 <article class="blocflex__article">
-    <h5><a href="<?php the_permalink(); ?>"> <?= $sigle; ?></a></h5>
-    <h6><?= $titre_long ?></h6>
+    <h5><a href="<?php the_permalink(); ?>"> <?= $titre; ?></a></h5>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
-   
 </article>
 </main> 
 <?php get_footer(); ?>
