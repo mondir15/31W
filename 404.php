@@ -21,8 +21,7 @@ get_header();
         }
         wp_nav_menu(array(
             "container" => "nav",
-            "menu_class" => "cours-menu",
-            "menu" => substr($lemenu, 0, 3)
+            "menu_class" => "cours-menu"
         ));
         ?>
 
