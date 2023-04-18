@@ -5,7 +5,7 @@
 get_header();
 ?>
 
-<main class="site__main" style="background-image: url('https://example.com/mon-image.jpg');">
+<main class="site__main" style="background-image: url('https://c8.alamy.com/compfr/w1xnc9/erreur-404-page-non-trouvee-vector-plug-avec-design-graphique-modele-de-graphique-d-arriere-plan-du-site-w1xnc9.jpg');">
     <div class="overlay"></div>
     <div class="container">
         <h1>Erreur 404</h1>
@@ -22,7 +22,7 @@ get_header();
         wp_nav_menu(array(
             "container" => "nav",
             "menu_class" => "cours-menu",
-            "menu" => $lemenu
+            "menu" => substr($lemenu, 0, 3)
         ));
         ?>
 
@@ -43,8 +43,8 @@ get_header();
                 
         ?>
                 <article class="blocflex__article">
-                    <h5><a href="<?php the_permalink(); ?>"> <?= $titre; ?></a></h5>
-                    <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
+                    <h5><a href="<?php the_permalink(); ?>"> <?= substr($titre, 0, 15); ?></a></h5>
+                   
                 </article>
         <?php
             endwhile;
